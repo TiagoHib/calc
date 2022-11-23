@@ -3,10 +3,6 @@ function insert(num){
     document.getElementById('resultado').innerHTML = numero + num;
 }
 
-function clean(){
-    document.getElementById('resultado').innerHTML = "";
-}
-
 function back(){
     var resultado = document.getElementById('resultado').innerHTML;
     document.getElementById('resultado').innerHTML = resultado.substring(0, resultado.length -1);
@@ -22,25 +18,31 @@ function calcular(){
     }
 
     var plays = document.getElementById('plays').innerHTML;   
-    if (plays > 1){
+    if (plays >= 1){
         document.getElementById('plays').innerHTML = plays - 1;
     }
     else{
         if(document.getElementById('resultado').innerHTML == 0){
-            var popup_win = document.getElementById('pop_win');
-            popup_win.classList.toggle("show");
-    
+            var win = document.getElementById('calc_win');
+            win.classList.toggle("show");
+
+            document.getElementById("zero").disabled = true;
+            document.getElementById("clean").disabled = true;
+
             var elements = document.getElementsByClassName("botao");
             for (var i = 0; i < elements.length; i++) {
                 elements[i].disabled =true;
             }
         }
         else{
-            var popup_lose = document.getElementById('pop_lose');
-            popup_lose.classList.toggle("show");
+            var lose = document.getElementById('calc_lose');
+            lose.classList.toggle("show");
+
             document.getElementById('plays').innerHTML = 0;
 
             document.getElementById("zero").disabled = true;
+            document.getElementById("clean").disabled = true;
+
             var elements = document.getElementsByClassName("botao");
             for (var i = 0; i < elements.length; i++) {
                 elements[i].disabled =true;
@@ -49,10 +51,12 @@ function calcular(){
     }
 
     if(document.getElementById('resultado').innerHTML == 0){
-        var popup_win = document.getElementById('pop_win');
-        popup_win.classList.toggle("show");
+        var win = document.getElementById('calc_win');
+        win.classList.toggle("show");
 
         document.getElementById("zero").disabled = true;
+        document.getElementById("clean").disabled = true;
+
         var elements = document.getElementsByClassName("botao");
         for (var i = 0; i < elements.length; i++) {
             elements[i].disabled =true;
@@ -60,3 +64,6 @@ function calcular(){
     }
 }
 
+function avançar(){
+	window.open("fase2.html");
+}

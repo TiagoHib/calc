@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    cursor: default;
 }
 
 .fundo{
@@ -9,6 +10,7 @@
     color: white;
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
+    
 }
 
 .calculadora{
@@ -19,6 +21,35 @@
     transform: translate(-50%,-50%);
     border-radius: 15px;
     padding: 15px;
+    color: #3c7ae6;
+}
+
+.calc{
+    width: 264px;
+    position: absolute;
+    background-color: rgba(0, 0, 0);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 15px;
+    padding: 15px;
+    color: #3c7ae6;
+}
+
+.invis{
+    visibility: hidden;
+}
+
+.invis .show{
+    visibility: visible;
+}
+
+.vis{
+    visibility: visible;
+}
+
+.vis .hide{
+    visibility: hidden;
 }
 
 .popup_lose .popup_lose_text{
@@ -26,7 +57,7 @@
     background-color: rgba(0, 0, 0, 0.8);
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%,-550%);
     border-radius: 15px;
     padding: 15px;
     visibility: hidden;
@@ -39,9 +70,9 @@
 .popup_win .popup_win_text{
     position: absolute;
     background-color: rgba(0, 0, 0, 0.8);
-    top: 50%;
+    margin-top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%,-550%);
     border-radius: 15px;
     padding: 15px;
     visibility: hidden;
@@ -62,8 +93,15 @@
     color: white;
 }
 
-.botao:hover{
-    background-color: black;
+.botao1{
+    width: 168px;
+    height: 62px;
+    font-size: 25px;
+    cursor: pointer;
+    margin: 3px;
+    background-color: rgb(255, 0, 0);
+    border: none;
+    color: white;
 }
 
 .botao2{
@@ -75,6 +113,14 @@
     background-color: rgb(255, 0, 0);
     border: none;
     color: white;
+}
+
+.botao1:hover{
+    background-color: black;
+}
+
+.botao:hover{
+    background-color: black;
 }
 
 .botao2:hover{
@@ -92,13 +138,56 @@
     padding: 5px;
 }
 
-#plays{
-    width: 334px;
+.plays{
+    width: 168px;
     background-color: white;
     height: 30px;
-    margin: 5px;
+    margin: 3px;
     font-size: 25px;
     color: black;
     text-align: right;
+}
+
+.n_plays{
+    width: 168px;
+    height: 17px;
+    margin: 4px;
+    font-size: 18px;
+    color: white;
+}
+
+.a{
+    background-color: #525252;
+    text-decoration: none;
     padding: 5px;
+    margin-bottom: 2px;
+    border: none;
+    color: #3c7ae6;
+    cursor: pointer;
+    transform: translate(125%,63%);
+    border-radius: 8px;
+}
+
+.b{
+    background-color: #525252;
+    text-decoration: none;
+    padding: 5px;
+    margin-bottom: 2px;
+    border: none;
+    color: #3c7ae6;
+    cursor: pointer;
+    transform: translate(-120%, 63%);
+    border-radius: 8px;
+}
+
+.c{
+    background-color: #525252;
+    text-decoration: none;
+    padding: 5px;
+    margin-bottom: 2px;
+    border: none;
+    color: #3c7ae6;
+    cursor: pointer;
+    transform: translate(0,63%);
+    border-radius: 8px;
 }
