@@ -1,0 +1,114 @@
+body {
+    margin: 0;
+    font-family: opensans, "Open Sans", Futura, Sans-Serif;
+}
+
+.main_login{
+    height: 100vh;
+    background: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.right_login{
+    width: 90vh;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card_login{
+    width: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #D6D6D6;
+    flex-direction: row;
+          /*eixo y  eixo x*/
+    padding: 30px 50px;
+    border-radius: 20px;
+}
+
+.textfield{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+          /*eixo y  eixo x*/
+    margin: 10px 0px;
+}
+
+.textfield > input{
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    background: #ffffff;
+    color: #000000;
+    font-size: 12pt;
+    outline: none;
+    box-sizing: border-box;
+}
+
+label {
+    display: flex;
+    align-self: flex-start;
+}
+
+form {
+    width: 100%;
+}
+
+.text {
+    width: 100%;
+    border: none;
+    border-radius: 40px;
+    padding: 15px;
+    background: #ffffff;
+    color: #000000;
+    font-size: 12pt;
+    outline: none;
+    box-sizing: border-box;
+
+}
+
+.textfield > label{
+    color: #000000;
+    font-size: 20px;
+}
+
+.textfield > input::placeholder{
+    color: #000000;
+}
+
+.btn_login{
+    width: 15vw;
+    padding: 16px 0px;
+    border: none;
+    border-radius: 40px;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 3px;
+    color: #000000;
+    background: #ffffff;
+    cursor: pointer;
+    margin-right: auto;
+}
+
+.link{
+    display: flex;
+    color: #000000;
+    text-decoration: none;
+    margin: 20px 0;
+}
+
+.sub_titulo{
+    display: flex;
+    color: #000000;
+    text-decoration: none;
+    margin: 20px 0;
+}
